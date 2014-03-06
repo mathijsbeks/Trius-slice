@@ -1,0 +1,468 @@
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    background: #001d28 url('../img/bg.png') repeat-y top left;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+#wrapper_menu {
+    display: block;
+    width: 100%;
+    height: 95px;
+    background: url('../img/menu-bg.png');
+}
+
+#wrapper {
+    background: url('../img/bg-hand.jpg') no-repeat left bottom;
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+}
+
+header {
+    margin: 0 auto;
+    width: 940px;
+    display: block;
+    position: relative;
+    font-family: "futura-pt";
+}
+
+header h1 {
+    width: 220px;
+    height: 95px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 a {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: url('../img/logo.png') no-repeat;
+    text-indent: -999px;
+}
+
+header nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 250px;
+    width: 690px;
+}
+
+header nav form {
+    float: right;
+    margin: 0;
+    padding: 0;
+    background: #000;
+
+}
+
+header nav form input {
+    border: none;
+    color: #fff;
+}
+
+header nav form input.search_text {
+    height: 31px;
+    background: #375c70;
+    margin: 0;
+    padding: 5px 10px;
+    float: left;
+    width: 80px;
+    color: #7ea3b7;
+    font-size: 14px;
+}
+
+header nav input.search {
+    background: url('../img/search.png') no-repeat;
+    text-indent: -999px;
+    width: 41px;
+    height: 41px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: left;
+}
+
+header nav ul li {
+    float: left;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #f6bd40;
+}
+
+header nav ul li.active a {
+    color: #f6bd40;
+}
+
+.main_nav {
+    display: block;
+    list-style: none;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 250px;
+    top: 53px;
+}
+
+.main_nav li {
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.main_nav li a {
+    color: #84cee7;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main_nav li a:hover {
+    color: #fff;
+}
+
+.shortcuts {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 42px;
+}
+
+.shortcuts li {
+    float: left;
+    margin-right: 1px;
+}
+
+.shortcuts li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #f6bd40;
+    padding: 15px 20px;
+    float: left;
+}
+
+.shortcuts li a:hover {
+    background: #dfa933;
+}
+
+/* main content */
+
+.container {
+    display: block;
+    width: 960px;
+    margin: 50px auto;
+}
+
+.container h2 {
+    display: block;
+    text-indent: -9999px;
+    background: url('../img/empower.png') no-repeat;
+    width: 424px;
+    height: 79px;
+    margin: 0 auto;
+}
+
+.intro {
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 20px;
+    padding: 0 90px;
+}
+
+.category {
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    width: 940px;
+    float: left;
+}
+
+.category li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.category li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.category li a img {
+    border-radius: 7px;
+    border: 1px solid #9dc8d9;
+}
+
+.category li a:hover img {
+    border-radius: 7px;
+    border: 1px solid #fff;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden
+;    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
