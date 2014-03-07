@@ -71,6 +71,13 @@ textarea {
     padding-bottom: 40px;
 }
 
+#wrapper_footer {
+    background: #fff;
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
 header {
     margin: 0 auto;
     width: 940px;
@@ -154,14 +161,14 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #d0eeff;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
 }
 
 header nav ul li a:hover {
-    color: #f6bd40;
+    color: #fff;
 }
 
 header nav ul li.active a {
@@ -268,13 +275,206 @@ header nav ul li.active a {
 }
 
 .category li a img {
-    border-radius: 7px;
+    border-radius: 12px;
     border: 1px solid #9dc8d9;
+    opacity: 0.8;
 }
 
 .category li a:hover img {
-    border-radius: 7px;
     border: 1px solid #fff;
+    opacity: 1;
+}
+
+.container_footer {
+    width: 940px;
+    margin: 30px auto 0;
+}
+
+.container_footer h2 {
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ccc;
+    color: #444;
+    font-size: 24px;
+    font-family: "futura-pt";
+}
+
+.container_footer section {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+div.promotions {
+    width: 490px;
+    float: left;
+}
+
+div.promotions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+div.promotions ul li {
+    float: left;
+    margin-right: 13px;
+}
+
+div.promotions ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+div.promotions ul li img {
+    border-radius: 12px;
+}
+
+.news {
+    width: 380px;
+    float: right;
+}
+
+.news h2 {
+    padding-left: 25px;
+    background: url('../img/ic_news.png') no-repeat 0px 6px;
+}
+
+.news article {
+    font-family: "arial";
+    color: #444;
+}
+
+.news article h2 a {
+    color: #444;
+}
+
+.news article h2 a:hover {
+    color: #000;
+}
+
+.news article h4 {
+    font-family: "futura-pt";
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.news article h4 a {
+    color: #444;
+    text-decoration: none;
+}
+
+.news article .date {
+    font-size: 15px;
+    font-family: "Arial";
+}
+
+.news article p {
+    margin: 0;
+    padding: 10px 0 0 0;
+    font-size: 15px;
+}
+
+.news article p a {
+    color: #3296c0;
+    text-decoration: underline;
+}
+
+.news article p a:hover {
+    color: #1e6e8f;
+    text-decoration: underline;
+}
+
+section .contact {
+    float: left;
+    width: 450px;
+}
+
+section .contact p {
+    font-size: 15px;
+    color: #444;
+}
+
+section .contact h3,
+section .newsletter h3 {
+    font-family: "futura-pt";
+    color: #444;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+span.telephone {
+    padding-left: 20px;
+    background: url('../img/ic_tel.png') no-repeat center left;
+}
+
+span.fax {
+    padding-left: 20px;
+    background: url('../img/ic_fax.png') no-repeat center left;
+}
+
+a.mail {
+    padding-left: 20px;
+    background: url('../img/ic_mail.png') no-repeat center left;
+    color: #f5822a;
+    text-decoration: none;
+    border-bottom: 1px dotted #f5822a;
+}
+
+a.mail:hover {
+    color: #cc6618;
+}
+
+.newsletter form {
+    margin: 20px;
+    font-size: 15px;
+}
+
+.newsletter form input {
+    border-radius: 5px;
+    border: 1px solid #f4c55b;
+    padding: 5px;
+}
+
+.newsletter form input.send {
+    background: #f5bb39;
+    color: #fff;
+}
+
+.wrapper_footer_post {
+    width: 100%;
+    float: left;
+    background: #21485e;
+    color: #21485e;
+}
+
+.wrapper_footer_post .container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.wrapper_footer_post .container p {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.wrapper_footer_post .container p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrapper_footer_post .container p a:hover {
+    color: #a9d8f1;
+    text-decoration: none;
+}
+
+.wrapper_footer_post .container  a.right {
+    float: right;
 }
 
 /* ==========================================================================
